@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PICO-SURE
 
-# Run and deploy your AI Studio app
+ระบบสืบค้นข้อมูลผู้ประกอบการพิโกไฟแนนซ์ พัฒนาโดยสำนักงานเศรษฐกิจการคลัง (สศค.) กระทรวงการคลัง
 
-This contains everything you need to run your app locally.
+## ฟีเจอร์หลัก
 
-View your app in AI Studio: https://ai.studio/apps/6b7b8eb6-28a4-450b-aca8-6bedce2b8ea6
+- **Map หาผู้ประกอบการ** — ค้นหาผู้ประกอบการพิโกไฟแนนซ์ในพื้นที่ผ่านระบบแผนที่
+- **รายชื่อผู้ประกอบการ** — ตรวจสอบรายชื่อผู้ประกอบการที่ได้รับอนุญาตและยังเปิดให้บริการ
+- **ระบบสำหรับเจ้าหน้าที่ สศค.** — จัดการข้อมูลและรายงานสถิติเพื่อการกำกับดูแล
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19 + TypeScript
+- Vite 6
+- Tailwind CSS 4
+- Motion (Framer Motion)
+- React Router DOM 7
 
+## เริ่มต้นใช้งาน
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+**ความต้องการ:** Node.js
+
+1. ติดตั้ง dependencies:
+   ```bash
+   npm install
+   ```
+
+2. สร้างไฟล์ `.env` จาก `.env.example` และกรอก API Key:
+   ```bash
+   cp .env.example .env
+   ```
+
+3. รันโปรเจกต์:
+   ```bash
+   npm run dev
+   ```
+
+เปิดที่ `http://localhost:3000`
+
+## คำสั่งที่ใช้บ่อย
+
+| คำสั่ง | คำอธิบาย |
+|--------|----------|
+| `npm run dev` | รัน dev server |
+| `npm run build` | Build สำหรับ production |
+| `npm run preview` | Preview build |
+| `npm run lint` | ตรวจสอบ TypeScript |
+
+## ติดต่อ
+
+- สายด่วน: 1359
+- อีเมล: pico@fpo.go.th
+- ที่อยู่: สำนักงานเศรษฐกิจการคลัง ถนนพระรามที่ 6 แขวงพญาไท เขตพญาไท กรุงเทพฯ 10400
