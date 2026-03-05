@@ -1,0 +1,5 @@
+{
+  "name": "PICO-SURE",
+  "description": "ระบบสืบค้นและจัดการข้อมูลผู้ประกอบการ Pico Finance สำหรับประชาชนและเจ้าหน้าที่ สศค.",
+  "requestFramePermissions": ["geolocation"]
+}
