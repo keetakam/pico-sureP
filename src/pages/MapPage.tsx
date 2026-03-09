@@ -152,13 +152,6 @@ const MapPage = () => {
     );
   };
 
-  const getGoogleMapsUrl = () => {
-    if (!userLocation || !selectedProvider) return "";
-    // Using Google Maps Directions URL for iframe
-    return `https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY_HERE&origin=${userLocation.lat},${userLocation.lng}&destination=${selectedProvider.lat},${selectedProvider.lng}&mode=driving`;
-    // Note: Since we don't have a real API key for the iframe, we'll use the search URL as a fallback or a simple view
-  };
-
   const getStaticMapUrl = () => {
     if (!selectedProvider) return "";
     return `https://www.google.com/maps?q=${selectedProvider.lat},${selectedProvider.lng}&output=embed`;
